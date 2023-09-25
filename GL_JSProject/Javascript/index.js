@@ -19,59 +19,65 @@ function Question(questionNo, questionText, answerChoices, rightAnswer) {
   };
 }
 
-var answerFunctions = new Answer("Functions");
-var answerXHTML = new Answer("XHTML");
-var answerCSS = new Answer("CSS");
-var answerHTML = new Answer("HTML");
+var answerJunagarh = new Answer("Junagarh");
+var answerDiphu = new Answer("Diphu");
+var answerKohima = new Answer("Kohima");
+var answerGangtok= new Answer("Gangtok");
 
 var question1 = new Question(
   1,
-  "Javascript Support",
-  [answerFunctions, answerXHTML, answerCSS, answerHTML],
-  answerFunctions
+  "Garampani sanctuary is located at",
+  [answerJunagarh, answerDiphu, answerKohima, answerGangtok],
+  answerDiphu
 );
 
-var answerJQuery = new Answer("JQuery");
-var answerXML = new Answer("XML");
+var answerHorseracing = new Answer("Horse racing");
+var answerPolo = new Answer("Polo");
+var answerShooting = new Answer("Shooting");
+var answerSnooker = new Answer("Snooker");
 
 var question2 = new Question(
   2,
-  "Which language is used for styling web pages?",
-  [answerHTML, answerJQuery, answerCSS, answerXML],
-  answerCSS
+  "Epsom (England) is the place associated with",
+  [answerHorseracing, answerPolo, answerShooting, answerSnooker],
+  answerHorseracing
 );
 
-var answerPythonScript = new Answer("Python Script");
-var answerDjango = new Answer("Django");
-var answerNodeJS = new Answer("Node JS");
+var answerUSA = new Answer("USA");
+var answerFiji = new Answer("Fiji");
+var answerIndia = new Answer("India");
+var answerUK = new Answer("UK");
 
 var question3 = new Question(
   3,
-  "Which is not a Javascript framework?",
-  [answerPythonScript, answerJQuery, answerDjango, answerNodeJS],
-  answerPythonScript
+  "Golf player Vijay Singh belongs to which country?",
+  [answerUSA, answerFiji, answerIndia, answerUK],
+  answerFiji
 );
 
-var answerPHP = new Answer("PHP");
-var answerJS = new Answer("JS");
+var answerNagaland = new Answer("Nagaland");
+var answerArunachalPradesh = new Answer("Arunachal Pradesh");
+var answerAssam = new Answer("Assam");
 var answerAll = new Answer("All");
 
 var question4 = new Question(
   4,
-  "Which is used to connect to Database?",
-  [answerPHP, answerHTML, answerJS, answerAll],
-  answerPHP
+  "Guwahati High Court is the judicature of",
+  [answerNagaland, answerArunachalPradesh, answerAssam, answerAll],
+  answerAll
 );
 
-var answerLanguage = new Answer("Language");
-var answerProgrammingLanguage = new Answer("Programming Language");
-var answerDevelopment = new Answer("Development");
+
+var answerPimpri = new Answer("Pimpri");
+var answerRajkot = new Answer("Rajkot");
+var answerPune = new Answer("Pune");
+var answerPerambur = new Answer("Perambur");
 
 var question5 = new Question(
   5,
-  "Java Script is a ",
-  [answerLanguage, answerProgrammingLanguage, answerDevelopment, answerAll],
-  answerProgrammingLanguage
+  " Film and TV institute of India is located at ",
+  [answerPimpri, answerRajkot,answerPune, answerPerambur],
+  answerPune
 );
 
 function QuizResult(questionAnswersObj) {
